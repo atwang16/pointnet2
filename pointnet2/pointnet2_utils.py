@@ -16,7 +16,7 @@ from torch.autograd import Function
 import torch.nn as nn
 import os
 import sys
-import utils3d.models.pointnet2.pytorch_utils as pt_utils
+import pointnet2.pytorch_utils as pt_utils
 
 
 try:
