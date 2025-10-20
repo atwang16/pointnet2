@@ -12,7 +12,7 @@ _ext_sources = glob.glob("{}/src/*.cpp".format(_ext_src_root)) + glob.glob(
 )
 _ext_headers = glob.glob("{}/include/*".format(_ext_src_root))
 
-requirements = ["torch>=1.4"]
+requirements = ["torch>=1.4", "numpy<2.0"]
 
 # os.environ["TORCH_CUDA_ARCH_LIST"] = "3.7+PTX;5.0;6.0;6.1;6.2;7.0;7.5"
 os.environ["TORCH_CUDA_ARCH_LIST"] = "5.0;6.0;6.1;6.2;7.0;7.5;8.0;8.6;8.7;8.9;9.0"
